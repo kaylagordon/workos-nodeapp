@@ -35,9 +35,9 @@ router.post('/login', (req, res) => {
     const login_type = req.body.login_method
 
     const params = {
-        clientID: clientID,
-        redirectURI: redirectURI,
-        state: state,
+        clientID,
+        redirectURI,
+        state,
     }
 
     if (login_type === 'saml') {
