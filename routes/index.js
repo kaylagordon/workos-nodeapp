@@ -23,8 +23,7 @@ const state = ''
 router.get('/', async (req, res) => {
     if (session.isloggedin) {
         res.render('login_successful.ejs', {
-            profile: session.profile,
-            first_name: session.first_name,
+            profile: (JSON.parse(session.profile).profile)
         })
     } else {
         res.render('index.ejs', { title: 'Home' })

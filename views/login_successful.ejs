@@ -23,23 +23,7 @@
             </div>
         </div>
         <div class="flex">
-            <div class="logged_in_div_right">
-                <div class="flex_column">
-                    <div class="flex width-941px space-between">
-                        <div>
-                            <p>Profile Details</p>
-                        </div>
-                        <div>
-
-                        </div>
-                    </div>
-                    <div>
-                        <pre id="noborder" class="prettyprint noborder">
-                            <%= profile %>
-                        </pre>
-                    </div>
-                </div>
-            </div>
+            <p>Hi <%= profile.first_name %> <%= profile.last_name %>!</p>
         </div>
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     </body>
