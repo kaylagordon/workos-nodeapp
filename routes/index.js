@@ -25,6 +25,7 @@ router.get('/', async (req, res) => {
         res.render('login_successful.ejs', {
             profile: (JSON.parse(session.profile).profile)
         })
+        console.log(JSON.parse(session.profile).profile)
     } else {
         res.render('index.ejs', { title: 'Home' })
     }
@@ -100,8 +101,6 @@ router.get('/directory', async (req, res) => {
         const usersFromDirectory = await workos.directorySync.listUsers({
             directory: 'directory_01JBA9A2JR29G6RY3Q3756ANZ2',
         })
-
-        // console.log(usersFromDirectory.data[0].groups[0].name)
 
         res.render('directory.ejs', {
             users: usersFromDirectory.data,
