@@ -17,7 +17,7 @@ app.use(
 const workos = new WorkOS(process.env.WORKOS_API_KEY)
 const clientID = process.env.WORKOS_CLIENT_ID
 const organizationID = 'org_test_idp'
-const redirectURI = 'http://localhost:8000/callback'
+const redirectURI = 'https://workos-nodeapp.onrender.com/callback'
 const state = ''
 
 router.get('/', async (req, res) => {
