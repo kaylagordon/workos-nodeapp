@@ -201,7 +201,6 @@ body {
     width: 100%;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     background-color: white;
-    color: ;
 }
 
 .login_button:hover {
@@ -382,4 +381,31 @@ h1 {
 
 #noborder > :first-child {
     display: none;
+}
+
+table {
+    margin: 25px;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+th {
+    color: white;
+    font-weight: bold;
+    background-color: #6363f1;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: center;
+    padding: 8px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:nth-of-type(even) {
+  background-color: #b0b0f9;
 }
