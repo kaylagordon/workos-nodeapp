@@ -101,10 +101,10 @@ router.get('/directory', async (req, res) => {
             directory: 'directory_01JBA9A2JR29G6RY3Q3756ANZ2',
         })
 
-        console.log(usersFromDirectory)
+        // console.log(usersFromDirectory.data[0].groups[0].name)
 
         res.render('directory.ejs', {
-            directory: usersFromDirectory.data,
+            users: usersFromDirectory.data,
         })
 
     } catch (error) {
