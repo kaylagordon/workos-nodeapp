@@ -22,10 +22,6 @@ const state = ''
 
 router.get('/', async (req, res) => {
     if (session.isloggedin) {
-        const usersFromDirectory = await workos.directorySync.listUsers({
-            directory: 'directory_01JBA9A2JR29G6RY3Q3756ANZ2',
-          });
-
         res.render('login_successful.ejs', {
             profile: session.profile,
             first_name: session.first_name,
@@ -95,6 +91,23 @@ router.get('/logout', async (req, res) => {
         session.isloggedin = null
 
         res.redirect('/')
+    } catch (error) {
+        res.render('error.ejs', { error: error })
+    }
+})
+
+router.get('/directory', async (req, res) => {
+    try {
+        const usersFromDirectory = await workos.directorySync.listUsers({
+            directory: 'directory_01JBA9A2JR29G6RY3Q3756ANZ2',
+        })
+
+        console.log(usersFromDirectory)
+
+        res.render('directory.ejs', {
+            directory: usersFromDirectory.data,
+        })
+
     } catch (error) {
         res.render('error.ejs', { error: error })
     }
