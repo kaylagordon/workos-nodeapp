@@ -20,8 +20,12 @@ const organizationID = 'org_test_idp'
 const redirectURI = 'http://localhost:8000/callback'
 const state = ''
 
-router.get('/', function (req, res) {
+router.get('/', async (req, res) => {
     if (session.isloggedin) {
+        const usersFromDirectory = await workos.directorySync.listUsers({
+            directory: 'directory_01JBA9A2JR29G6RY3Q3756ANZ2',
+          });
+
         res.render('login_successful.ejs', {
             profile: session.profile,
             first_name: session.first_name,
