@@ -17,7 +17,6 @@ You should be able to:
 
 <img src="./public/images/preview_app.gif" alt="screen recording of app in motion" width="800"/>  
 <br />
-<br />
 
 **App Displaying Okta Updates:**  
 
