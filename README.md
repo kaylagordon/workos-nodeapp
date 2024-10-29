@@ -2,9 +2,6 @@
 
 An example application demonstrating SSO and Directory Sync from WorkOS completed by Kayla Gordon.
 
-## App Preview
-![screen recording of app in motion](./public/images/screen_recording.gif)
-
 ## Deployed App
 
 **To view the app in action, head to [https://workos-nodeapp.onrender.com/](https://workos-nodeapp.onrender.com/).**  
@@ -14,6 +11,13 @@ You should be able to:
 2. View a page that says "Hi [your name]!".
 3. Click the "Directory" tab and see a list of users from a synced directory (through Okta).
 4. Navigate back to the "Profile" page or log out.
+
+## App Previews
+App in Motion:
+![screen recording of app in motion](./public/images/preview_app.gif)
+
+App Displaying Okta Updates:
+![screen recording of okta updates](./public/images/preview_okta.gif)
 
 ## Local Set Up
 
