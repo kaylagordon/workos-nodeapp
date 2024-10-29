@@ -7,7 +7,7 @@ An example application demonstrating SSO and Directory Sync from WorkOS complete
 
 ## Deployed App
 
-To view the app in action, head to [https://workos-nodeapp.onrender.com/](https://workos-nodeapp.onrender.com/). 
+**To view the app in action, head to [https://workos-nodeapp.onrender.com/](https://workos-nodeapp.onrender.com/).**  
 
 You should be able to:
 1. Sign in using Google OAuth, Microsoft OAuth, or Enterprise SAML.
