@@ -13,11 +13,15 @@ You should be able to:
 4. Navigate back to the "Profile" page or log out.
 
 ## App Previews
-App in Motion:
-![screen recording of app in motion](./public/images/preview_app.gif)
+**App in Motion:**  
 
-App Displaying Okta Updates:
-![screen recording of okta updates](./public/images/preview_okta.gif)
+<img src="./public/images/preview_app.gif" alt="screen recording of app in motion" width="800"/>  
+<br />
+<br />
+
+**App Displaying Okta Updates:**  
+
+<img src="./public/images/preview_okta.gif" alt="screen recording of okta updates" width="800"/>
 
 ## Local Set Up
 
