@@ -16,7 +16,7 @@ app.use(
 
 const workos = new WorkOS(process.env.WORKOS_API_KEY)
 const clientID = process.env.WORKOS_CLIENT_ID
-const organizationID = 'org_test_idp'
+const organizationID = 'org_01JBA994G94Z719PHEA4WMGXGR'
 const redirectURI = 'https://workos-nodeapp.onrender.com/callback'
 const state = ''
 
@@ -25,7 +25,6 @@ router.get('/', async (req, res) => {
         res.render('login_successful.ejs', {
             profile: (JSON.parse(session.profile).profile)
         })
-        console.log(JSON.parse(session.profile).profile)
     } else {
         res.render('index.ejs', { title: 'Home' })
     }
