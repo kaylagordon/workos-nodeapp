@@ -13,9 +13,14 @@ You should be able to:
 4. Navigate back to the "Profile" page or log out.
 
 ## App Previews
-**App in Motion:**  
+**Sign In via Google:**  
 
-<img src="./public/images/preview_app.gif" alt="screen recording of app in motion" width="800"/>  
+<img src="./public/images/preview_signin_google.gif" alt="screen recording of app in motion" width="800"/>  
+<br />
+
+**Sign In via Okta:**  
+
+<img src="./public/images/preview_signin_okta.gif" alt="screen recording of app in motion" width="800"/>  
 <br />
 
 **App Displaying Okta Updates:**  
